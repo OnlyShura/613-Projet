@@ -1,0 +1,15 @@
+#include <Hx711.h>
+Hx711 scale(A1, A0);
+
+char val;
+void setup() {
+Serial.begin (9600);
+}
+
+void loop() {
+
+  if (Serial.available())
+  {
+    val = Serial.read();
+  }
+  }
